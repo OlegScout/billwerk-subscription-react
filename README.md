@@ -20,7 +20,7 @@ Is done in `constants.ts`
 | :---                     | :--- |
 | publicApiKey             | The publicApiKey used to authenticate yourself against the API, found [here](https://sandbox.billwerk.com/#/settings/self-service) |
 | providerReturnUrl        | A url that will be used to redirect users back to your site when using a payment provider that requires redirects, such as PayPal. The page at this url must invoke the SubscriptionJS.finalize() method. **This parameter is required when using PSPs that rely on redirects (e.g. with checkoutpages).** |
-| paymentServiceProvider   | Your PSP, available values `Adyen, Paymill, PayOne, WirecardElastic, Stripe, Heidelpay or FakePSP` |
+| paymentServiceProvider   | Your PSP, available values `Adyen`, `Paymill`, `PayOne`, `WirecardElastic`, `Stripe`, `Heidelpay` or `FakePSP` |
 | planVariantIdUrlParamName| ID of the planvariant you want to order |
 
 # Restrictions
