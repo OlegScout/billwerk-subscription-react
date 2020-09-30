@@ -5,7 +5,7 @@ import GeneralInfoState from '../../interfaces/general-info/generalInfoState';
 import Cart from '../../interfaces/general-info/cart';
 import Customer from '../../interfaces/general-info/customer';
 import PaymentData from '../../interfaces/general-info/paymentData';
-import UrlHelper from '../../helpers/urlHelper'
+// import UrlHelper from '../../helpers/urlHelper'
 import './GeneralInfo.css';
 declare var SubscriptionJS: any;
 
@@ -46,7 +46,8 @@ class GeneralInfo extends Component<GeneralInfoProps, GeneralInfoState> {
         );
 
         let cart: Cart = {
-            planVariantId: UrlHelper.getPlanVariantId()
+            // planVariantId: UrlHelper.getPlanVariantId()
+            planVariantId: constants.planVariantId
         };
 
         let customer: Customer = {
@@ -84,6 +85,7 @@ class GeneralInfo extends Component<GeneralInfoProps, GeneralInfoState> {
         let errorHandler = function (errorData: any) {
             root.setState({isLoading: false});
             alert("Subscription failed. Check your data.");
+            console.log(errorData);
         };
     }
 
@@ -201,9 +203,6 @@ class GeneralInfo extends Component<GeneralInfoProps, GeneralInfoState> {
                                                     onChange={event => this.setState({ expiryYear: event.target.value })}
                                                     defaultValue="" >
                                                     <option value="" disabled={true}>JJ</option>
-                                                    <option value="2017">17</option>
-                                                    <option value="2018">18</option>
-                                                    <option value="2019">19</option>
                                                     <option value="2020">20</option>
                                                     <option value="2021">21</option>
                                                     <option value="2022">22</option>
@@ -211,6 +210,10 @@ class GeneralInfo extends Component<GeneralInfoProps, GeneralInfoState> {
                                                     <option value="2024">24</option>
                                                     <option value="2025">25</option>
                                                     <option value="2026">26</option>
+                                                    <option value="2026">27</option>
+                                                    <option value="2026">28</option>
+                                                    <option value="2026">29</option>
+                                                    <option value="2026">30</option>
                                                 </select>
                                             </div>
                                         </div>

@@ -1,14 +1,14 @@
 /** Merchant Public API key **/
-export const publicApiKey = '5331a0751d8dd00c4466c9be';
+export const publicApiKey = '';
 
 /** URL of page on your website a customer returns to after payment on a payment provider page **/
-export const providerReturnUrl = 'https://developer.billwerk.io/Docs/subscriptionJS_Introduction';
+export const providerReturnUrl = 'https://developer.billwerk.io/docs/subscriptionJS/overview';
 
 /** Payment service provider name **/
-export const paymentServiceProvider = 'Adyen';
+export const paymentServiceProvider = 'PayOne';
 
 /**
-    Name of URL-parameter that contains planVariantId
+    planVariantId
     Example value for this param: "5331a27f1d8dd00c4466c9dd"
 **/
-export const planVariantIdUrlParamName = 'plan-variant-id';
+export const planVariantId = '';

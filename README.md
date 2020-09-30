@@ -25,4 +25,5 @@ Is done in `constants.ts`
 
 # Restrictions
 
-Only payment available for now is CC
+Only paymentmethod available for now is CC
+Tested with npm v6.14.8 (30.09.2020)
