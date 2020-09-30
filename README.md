@@ -26,4 +26,6 @@ Is done in `constants.ts`
 # Restrictions
 
 Only paymentmethod available for now is CC
+
+# Versioninfo
 Tested with npm v6.14.8 (30.09.2020)
